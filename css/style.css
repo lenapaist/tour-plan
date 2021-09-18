@@ -380,7 +380,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 31px 15px;
+  padding: 31px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -551,8 +551,7 @@ template {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 22px 15px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -572,8 +571,7 @@ template {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
-
-  .menu-button {
+  .navbar-button {
     display: flex;
     width: 16px;
     height: 11px;
@@ -585,7 +583,7 @@ template {
     background-color: #fff;
     cursor: pointer;
   }
-  .menu-button__line {
+  .navbar-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
