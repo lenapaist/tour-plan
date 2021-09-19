@@ -466,7 +466,6 @@ template {
 }
 
 .hotel {
-  padding-top: 5px;
   padding-bottom: 70px;
 }
 .hotel-info {
@@ -479,11 +478,11 @@ template {
   margin-top: 4px;
 }
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 .hotel-name {
   font-size: 24px;
@@ -527,6 +526,9 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+.rating .mini {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
