@@ -500,6 +500,10 @@ template {
 
 .stars {
   flex-basis: 100%;
+  display: flex;
+}
+.stars .star {
+  margin-right: 2px;
 }
 
 .offer {
