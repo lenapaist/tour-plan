@@ -747,6 +747,7 @@ template {
 
   .booking {
     width: 340px;
+    height: 210px;
   }
 
   .slider {
@@ -755,6 +756,7 @@ template {
 
   .map {
     width: 340px;
+    height: 210px;
   }
 }
 @media (max-width: 768px) {
@@ -841,7 +843,7 @@ template {
   }
 
   .slider {
-    height: 250px;
+    height: 179px;
   }
 
   .hotel__slider {
