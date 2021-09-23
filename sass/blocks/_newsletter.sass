@@ -1,11 +1,13 @@
 .newsletter
   position: relative
-  padding: 98px 0 87px
+  display: flex
+  align-items: center
+  min-height: 260px
+  max-height: 319px
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
   background-position: center
   background-size: cover
-  max-height: 260px
   &:before
     content: ''
     position: absolute
@@ -21,8 +23,10 @@
     display: flex
     align-items: center
     justify-content: space-between
+    width: 100%
     max-width: 731px
-    margin: auto
+    height: 100%
+    margin: 0 auto
   &-title
     color: $light
     font-style: normal
