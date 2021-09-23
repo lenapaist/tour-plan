@@ -697,6 +697,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-height: 260px;
 }
 .newsletter:before {
   content: "";
@@ -759,6 +760,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -1072,14 +1077,14 @@ template {
   .newsletter-title {
     font-weight: 300;
     font-style: normal;
-    font-size: 20pz;
+    font-size: 20px;
     line-height: 25px;
   }
   .newsletter-title__strong {
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
-    line-height: 37px;
+    line-height: 38px;
   }
 
   .subscribe {
