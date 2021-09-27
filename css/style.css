@@ -1205,6 +1205,8 @@ template {
   .activities__title {
     margin-bottom: 36px;
     margin-top: 0;
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .card {
