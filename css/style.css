@@ -1211,5 +1211,12 @@ template {
 
   .card {
     width: 100%;
+    order: 2;
+  }
+  .card-priority {
+    order: 1;
+  }
+  .card-main {
+    order: 0;
   }
 }/*# sourceMappingURL=style.css.map */
