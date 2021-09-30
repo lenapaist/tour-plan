@@ -231,7 +231,7 @@
                                 <span class="booking__heading"
                                     >Quick Booking</span
                                 >
-                                <a href="tel: 12100" class="booking__number">
+                                <a href="tel:12100" class="booking__number">
                                     <img
                                         src="./img/phone-call.svg"
                                         alt="Icon: phone"
@@ -246,7 +246,6 @@
                         <div class="map">
                             <iframe
                                 src="https://www.google.com/maps/d/u/0/embed?mid=114Qe345ZEVRXgNVh6NJPXnqEhDy5AHcE"
-                                width="100%"
                                 height="213"
                             ></iframe>
                         </div>
@@ -529,11 +528,12 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-wrapper">
-                    <img
-                        src="./img/vertical-logo.svg"
-                        alt="Logo: Best Tour Plan"
-                        class="logo footer__logo"
-                    />
+                    <a class="logo footer__logo" href="#">
+                        <img
+                            src="./img/vertical-logo.svg"
+                            alt="Logo: Best Tour Plan"
+                        />
+                    </a>
                     <div class="footer__list footer__categories">
                         <h3 class="footer__title">ALL CATEGORIES</h3>
                         <ul class="footer__ul">
@@ -605,17 +605,23 @@
                             Social Network
                         </h3>
                         <div class="footer__social-links">
-                            <a href="#" class="footer__link"
+                            <a
+                                href="https://www.facebook.com/grandhilton"
+                                class="footer__link"
                                 ><img
                                     class="footer__social-icon"
                                     src="./img/facebook.svg"
                                     alt="Icon: Facebook" /></a
-                            ><a href="#" class="footer__link"
+                            ><a
+                                href="https://www.youtube.com/channel/UCcCEgOzK4mtrT1HWAJEmW7g"
+                                class="footer__link"
                                 ><img
                                     class="footer__social-icon"
                                     src="./img/youtube.svg"
                                     alt="Icon: YouTube" /></a
-                            ><a href="#" class="footer__link"
+                            ><a
+                                href="https://www.instagram.com/hiltonhotels/"
+                                class="footer__link"
                                 ><img
                                     class="footer__social-icon"
                                     src="./img/instagram.svg"
@@ -661,8 +667,10 @@
                                         class="footer__icon"
                                     />
                                 </div>
-                                9748 Blossom Hill Rd undefined Lansing, Idaho
-                                68545 United States
+                                <span class="footer__item-contacts"
+                                    >9748 Blossom Hill Rd undefined Lansing,
+                                    Idaho 68545 United States</span
+                                >
                             </li>
                             <li class="footer__item footer__item--mb-2">
                                 <div class="footer__icon-wrapper">
@@ -672,11 +680,36 @@
                                         alt="Icon: phone"
                                     />
                                 </div>
-                                Tel (business hours) : 269 1500 <br />
-                                Tel (hotline) Monday - Saturday: 52-56-61-38
-                                (08:00 am – 20:00 pm) <br />
-                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am –
-                                14:00 pm)
+
+                                <div class="footer__item-info">
+                                    <a
+                                        class="footer__item-contacts"
+                                        href="tel:2691500"
+                                        >Tel (business hours) : 269 1500
+                                    </a>
+
+                                    <a
+                                        class="footer__item-contacts"
+                                        href="tel:52-56-61-38"
+                                        >Tel (hotline) Monday - Saturday:
+                                        <span
+                                            class="footer__item-contacts-number"
+                                            >52-56-61-38</span
+                                        >
+                                        (08:00 am – 20:00 pm)
+                                    </a>
+
+                                    <a
+                                        class="footer__item-contacts"
+                                        href="tel:52-56-61-38"
+                                        >Tel (hotline) Sunday:
+                                        <span
+                                            class="footer__item-contacts-number"
+                                            >52-56-61-38</span
+                                        >
+                                        (08:00 am – 14:00 pm)</a
+                                    >
+                                </div>
                             </li>
                             <li class="footer__item footer__item--mb-2">
                                 <div class="footer__icon-wrapper">
@@ -686,7 +719,11 @@
                                         class="footer__icon"
                                     />
                                 </div>
-                                cherly.lawson@example.com
+                                <a
+                                    class="footer__item-contacts"
+                                    href="mailto:cherly.lawson@example.com"
+                                    >cherly.lawson@example.com</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -723,12 +760,12 @@
                 </div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-wrapper">
-                        <span class="footer__bottom-text">Disclaimer</span>
-                        <span class="footer__bottom-text"
-                            >Conditions of use</span
+                        <a href="#" class="footer__bottom-text">Disclaimer</a>
+                        <a href="#" class="footer__bottom-text"
+                            >Conditions of use</a
                         >
-                        <span class="footer__bottom-text"
-                            >Cancellation policy</span
+                        <a href="#" class="footer__bottom-text"
+                            >Cancellation policy</a
                         >
                     </div>
                     <img
