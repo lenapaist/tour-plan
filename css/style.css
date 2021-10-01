@@ -398,7 +398,7 @@ template {
   font-size: 14px;
   line-heigh: 18px;
 }
-.navbar-menu__item--mobile_visible {
+.navbar-menu__item--mobile--visible {
   display: none;
 }
 
@@ -1299,17 +1299,17 @@ template {
     padding-top: 70px;
   }
 
-  .navbar--mobile_fixed {
+  .navbar__mobile--fixed {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     z-index: 99;
   }
-  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
   }
-  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
     display: flex;
   }
   .navbar__user {
@@ -1334,7 +1334,7 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item--mobile_visible {
+  .navbar-menu__item--mobile--visible {
     display: block;
   }
   .navbar .menu-button {
