@@ -1172,18 +1172,21 @@ template {
 @media (max-width: 992px) {
   .container, .newsletter-wrapper {
     max-width: 100%;
-    margin: 0 35px;
+    margin: 0 47px 0 35px;
   }
 
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .navbar .logo__image {
+    width: 132px;
+  }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 2px;
   }
   .navbar-menu {
-    padding: 22px 15px;
+    padding: 21px 15px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -1194,6 +1197,9 @@ template {
     width: 340px;
   }
 
+  .hotel {
+    padding-bottom: 58px;
+  }
   .hotel-grid {
     flex-direction: column;
   }
@@ -1210,6 +1216,7 @@ template {
   .booking {
     width: 340px;
     height: 210px;
+    padding: 28px 23px 28px 23px;
   }
 
   .map {
@@ -1217,16 +1224,23 @@ template {
     height: 210px;
   }
 
+  .reviews {
+    padding: 14px 0 58px 0;
+  }
   .reviews__title {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 38px;
+    margin-bottom: 52px;
   }
   .reviews-slider__item {
     max-width: 580px;
   }
 
+  .activities {
+    padding: 41px 0 51px 0;
+  }
   .activities__card {
     margin-bottom: 20px;
   }
@@ -1243,17 +1257,21 @@ template {
     padding-top: 73px;
     padding-bottom: 33px;
   }
+  .footer__title--mb-3 {
+    margin-bottom: 23px;
+  }
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 43px;
     grid-column-gap: 0;
   }
   .footer__input {
-    flex-basis: 49%;
+    flex-basis: 47%;
   }
   .footer__logo {
     grid-row: 1/2;
     grid-column: span 2;
+    width: 97px;
   }
   .footer__social-network {
     grid-row: 1/2;
@@ -1267,14 +1285,16 @@ template {
   }
   .footer__legal {
     grid-column: span 2;
+    margin-left: 32px;
   }
   .footer__additional {
     grid-column: span 2;
+    margin-left: -33px;
   }
   .footer__contact-details {
     grid-column: span 5;
     grid-row: 3;
-    margin-top: 25px;
+    margin-top: 19px;
   }
   .footer__contact-form {
     grid-column: span 5;
@@ -1283,7 +1303,7 @@ template {
   }
   .footer__bottom {
     justify-content: space-between;
-    margin-top: 63px;
+    margin-top: 54px;
   }
   .footer__bottom-img {
     position: relative;
@@ -1322,6 +1342,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow-y: scroll;
   }
   .navbar-menu {
     flex-direction: column;
@@ -1331,9 +1352,7 @@ template {
   }
   .navbar-menu__item--mobile--visible {
     display: block;
-  }
-  .navbar .logo__image {
-    width: 134px;
+    width: 245px;
   }
   .navbar .menu-button {
     display: flex;
@@ -1440,7 +1459,8 @@ template {
     width: 49%;
     height: 255px;
   }
-
+}
+@media (max-width: 650px) {
   .footer {
     padding-top: 69px;
     padding-bottom: 21px;
@@ -1482,6 +1502,7 @@ template {
   .footer__additional {
     grid-row: 4;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__categories {
     grid-row: 5;
@@ -1517,6 +1538,9 @@ template {
     align-items: flex-start;
     margin-top: 30px;
   }
+  .footer__bottom-text {
+    margin-right: 5px;
+  }
   .footer__bottom-wrapper {
     margin-bottom: 9px;
   }
@@ -1539,15 +1563,28 @@ template {
     padding-bottom: 26px;
   }
 
+  .hotel {
+    padding-bottom: 43px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
   .hotel-slider {
-    height: 250px;
+    height: 180px;
+  }
+  .hotel-info {
+    padding-bottom: 41px;
+  }
+  .hotel-right {
+    min-height: 400px;
+  }
+
+  .map {
+    height: 168px;
   }
 
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 62px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
@@ -1565,6 +1602,10 @@ template {
     line-height: 38px;
   }
 
+  .reviews {
+    padding: 40px 0 58px 0;
+  }
+
   .subscribe {
     width: 100%;
   }
@@ -1572,11 +1613,14 @@ template {
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
+    margin: 0 auto;
     margin-bottom: 42px;
+    max-width: 200px;
   }
 
   .activities {
-    padding-top: 20px;
+    padding-top: 38px;
+    padding-bottom: 50px;
   }
   .activities__title {
     margin-bottom: 36px;
@@ -1594,9 +1638,5 @@ template {
   }
   .card-main {
     order: 0;
-  }
-
-  .footer__bottom-text {
-    margin-right: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
