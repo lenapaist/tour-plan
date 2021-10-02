@@ -47,12 +47,10 @@
     &-slider
       width: 100%
   .booking
-    width: 340px
-    height: 210px
-    padding: 28px 23px 28px 23px
+    width: 50%
+    margin-right: 20px
   .map
-    width: 340px
-    height: 210px
+    width: 49%
   .reviews
     padding: 14px 0 58px 0
     &__title
@@ -71,7 +69,7 @@
     &-wrapper
       flex-wrap: wrap
   .card
-    width: 340px
+    width: 49%
     height: 255px
   .footer
     padding-top: 73px
@@ -122,6 +120,8 @@
 @media (max-width: 768px)
   body
     padding-top: 70px
+  .card
+    width: 340px
   .navbar
     &__mobile
       &--fixed
@@ -204,15 +204,16 @@
         margin-left: 0
         margin-top: 0
   .hotel
-    &-right
-      flex-direction: column
-      min-height: 450px
     &-slider
       height: 350px
   .booking
-    width: 100%
+    width: 340px
+    height: 210px
+    margin-right: 0
+    padding: 28px 23px 28px 23px
   .map
-    width: 100%
+    width: 340px
+    height: 210px
   .newsletter
     &-wrapper
       max-width: 576px
@@ -242,6 +243,14 @@
     width: 49%
     height: 255px
 @media (max-width: 650px)
+  .hotel
+    &-right
+      flex-direction: column
+  .booking
+    width: 100%
+    margin-bottom: 20px
+  .map
+    width: 100%
   .footer
     padding-top: 69px
     padding-bottom: 21px
@@ -371,4 +380,9 @@
       order: 1
     &-main
       order: 0
-    
+  .modal
+    &__dialog
+      padding: 30px 40px
+      width: 95%
+    &__button
+      margin-bottom: 10px

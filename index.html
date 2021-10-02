@@ -298,15 +298,16 @@
                                     <span class="booking__num">12100</span>
                                 </a>
                             </div>
-                            <button class="button booking__button">
+                            <button
+                                data-toggle="modal"
+                                class="button booking__button"
+                            >
                                 View Other Options
                             </button>
                         </div>
                         <div class="map">
                             <iframe
                                 src="https://www.google.com/maps/d/u/0/embed?mid=114Qe345ZEVRXgNVh6NJPXnqEhDy5AHcE"
-                                height="213"
-                                width="100%"
                             ></iframe>
                         </div>
                     </div>
@@ -813,7 +814,7 @@
                                 name="phone"
                             />
                             <textarea
-                                class="footer__message"
+                                class="message footer__message"
                                 cols="30"
                                 rows="10"
                                 placeholder="Message"
@@ -848,6 +849,42 @@
                 </div>
             </div>
         </footer>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog">
+                <a href="#" class="modal__close">
+                    <img src="./img/close.svg" alt="Icon: Close" />
+                </a>
+                <h3 class="modal__title modal__title--mb-3">
+                    Send us a message
+                </h3>
+                <form action="#" class="modal__form">
+                    <input
+                        type="text"
+                        class="input modal__input"
+                        placeholder="Your Full Name*"
+                    /><input
+                        type="text"
+                        class="input modal__input"
+                        placeholder="Phone Number*"
+                    />
+                    <input
+                        type="text"
+                        class="input modal__input"
+                        placeholder="Email*"
+                    />
+                    <textarea
+                        class="message modal__message"
+                        placeholder="Message"
+                    ></textarea>
+                    <div class="modal__form-block">
+                        <button class="button modal__button">Send</button>
+                        <span class="modal__info">* Required Fields</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./js/jquery-3.6.0.min.js"></script>
         <script src="./js/swiper-bundle.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
