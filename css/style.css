@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.hidden-scroll {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -65,6 +69,7 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1189,6 +1194,8 @@ template {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
+  overflow-y: auto;
+  max-height: 100%;
 }
 .modal__dialog--visible {
   visibility: visible;
@@ -1432,7 +1439,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .navbar-menu {
     flex-direction: column;
@@ -1504,7 +1511,7 @@ template {
   .booking {
     width: 340px;
     height: 210px;
-    margin-right: 0;
+    margin-right: 20px;
     padding: 28px 23px 28px 23px;
   }
 

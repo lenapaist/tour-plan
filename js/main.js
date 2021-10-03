@@ -32,6 +32,7 @@ $(document).ready(function () {
     const menuButton = $(".menu-button");
     menuButton.on("click", function () {
         $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+        $("body").toggleClass("hidden-scroll");
     });
 
     const modalButton = $("[data-toggle=modal]");
@@ -45,12 +46,14 @@ $(document).ready(function () {
     function openModal() {
         modalOverlay.addClass("modal__overlay--visible");
         modalDialog.addClass("modal__dialog--visible");
+        $("body").addClass("hidden-scroll");
     }
 
     function closeModal(event) {
         event.preventDefault();
         modalOverlay.removeClass("modal__overlay--visible");
         modalDialog.removeClass("modal__dialog--visible");
+        $("body").removeClass("hidden-scroll");
     }
     document.addEventListener("keydown", (event) => {
         if (event.code === "Escape") {
