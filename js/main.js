@@ -42,6 +42,7 @@ $(document).ready(function () {
 
     const modalOverlay = $(".modal__overlay");
     const modalDialog = $(".modal__dialog");
+    const modalForm = $(".form");
 
     function openModal() {
         modalOverlay.addClass("modal__overlay--visible");
@@ -61,4 +62,24 @@ $(document).ready(function () {
             modalDialog.removeClass("modal__dialog--visible");
         }
     });
+    // Обработка форм
+    modalForm.each(function () {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Please specify your name",
+                    minlength: "Name must be at least 2 letters long",
+                },
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com",
+                },
+                phone: {
+                    required: "Phone is required",
+                },
+            },
+        });
+    });
+    $("input[name*='phone']").mask("+7(999) 999-9999");
 });
