@@ -71,6 +71,13 @@ img {
   border: none;
   cursor: pointer;
 }
+.button__back {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .invalid {
   color: #EC1F46;
