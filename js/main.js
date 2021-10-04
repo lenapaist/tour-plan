@@ -60,6 +60,7 @@ $(document).ready(function () {
         if (event.code === "Escape") {
             modalOverlay.removeClass("modal__overlay--visible");
             modalDialog.removeClass("modal__dialog--visible");
+            $("body").removeClass("hidden-scroll");
         }
     });
     // Обработка форм

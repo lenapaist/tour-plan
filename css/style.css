@@ -1772,6 +1772,7 @@ template {
   .modal__dialog {
     padding: 30px 40px;
     width: 95%;
+    height: 95%;
   }
   .modal__button {
     margin-bottom: 10px;
