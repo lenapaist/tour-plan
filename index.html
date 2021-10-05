@@ -323,13 +323,14 @@
                 <form
                     action="send.php"
                     method="POST"
-                    class="subscribe newsletter__subscribe"
+                    class="form subscribe newsletter__subscribe"
                 >
                     <input
                         type="email"
                         class="subscribe__input"
                         placeholder="Your email address"
                         name="email"
+                        required
                     />
                     <button class="subscribe__button">Send</button>
                 </form>
@@ -877,6 +878,8 @@
                         class="input modal__input"
                         placeholder="Phone Number*"
                         required
+                        minlength="16"
+                        maxlength="16"
                     />
                     <input
                         type="email"

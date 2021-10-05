@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     const modalOverlay = $(".modal__overlay");
     const modalDialog = $(".modal__dialog");
-    const modalForm = $(".form");
+    const form = $(".form");
 
     function openModal() {
         modalOverlay.addClass("modal__overlay--visible");
@@ -64,7 +64,7 @@ $(document).ready(function () {
         }
     });
     // Обработка форм
-    modalForm.each(function () {
+    form.each(function () {
         $(this).validate({
             errorClass: "invalid",
             messages: {
@@ -78,6 +78,7 @@ $(document).ready(function () {
                 },
                 phone: {
                     required: "Phone is required",
+                    minlength: "You must enter 10 digits of the number",
                 },
             },
         });
