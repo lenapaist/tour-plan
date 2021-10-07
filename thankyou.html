@@ -14,13 +14,25 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/aos.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <header class="navbar navbar__mobile--fixed">
+        <header class="navbar navbar-fixed">
             <div class="container">
                 <div class="navbar-top">
-                    <a href="./" class="logo">
+                    <a
+                        href="#"
+                        class="logo"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                    >
                         <img
                             src="./img/horizontal-logo.svg"
                             alt="Logo: Best Tour Plan"
@@ -28,6 +40,8 @@
                         />
                     </a>
                     <form
+                        data-aos="fade-right"
+                        data-aos-delay="200"
                         action="#"
                         class="
                             search
@@ -44,6 +58,8 @@
                         </button>
                     </form>
                     <a
+                        data-aos="fade-right"
+                        data-aos-delay="300"
                         href="#"
                         class="user navbar__user navbar__user--mobile--hidden"
                     >
@@ -178,7 +194,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-wrapper">
-                    <a class="logo footer__logo" href="./">
+                    <a class="logo footer__logo" href="#">
                         <img
                             src="./img/vertical-logo.svg"
                             alt="Logo: Best Tour Plan"
@@ -332,33 +348,33 @@
                                 </div>
 
                                 <div class="footer__item-info">
-                                    <a
-                                        class="footer__item-contacts"
-                                        href="tel:2691500"
-                                        >Tel (business hours) : 269 1500
-                                    </a>
-
-                                    <a
-                                        class="footer__item-contacts"
-                                        href="tel:52-56-61-38"
+                                    <span
+                                        >Tel (business hours) :
+                                        <a
+                                            class="footer__item-contacts"
+                                            href="tel:2691500"
+                                        >
+                                            269 1500
+                                        </a>
+                                    </span>
+                                    <span
                                         >Tel (hotline) Monday - Saturday:
-                                        <span
-                                            class="footer__item-contacts-number"
-                                            >52-56-61-38</span
-                                        >
+                                        <a
+                                            class="footer__item-contacts"
+                                            href="tel:52-56-61-38"
+                                            >52-56-61-38
+                                        </a>
                                         (08:00 am – 20:00 pm)
-                                    </a>
-
-                                    <a
-                                        class="footer__item-contacts"
-                                        href="tel:52-56-61-38"
+                                    </span>
+                                    <span
                                         >Tel (hotline) Sunday:
-                                        <span
-                                            class="footer__item-contacts-number"
-                                            >52-56-61-38</span
-                                        >
-                                        (08:00 am – 14:00 pm)</a
-                                    >
+                                        <a
+                                            class="footer__item-contacts"
+                                            href="tel:52-56-61-38"
+                                            >52-56-61-38
+                                        </a>
+                                        (08:00 am – 14:00 pm)
+                                    </span>
                                 </div>
                             </li>
                             <li class="footer__item footer__item--mb-2">
@@ -384,21 +400,31 @@
                         <form
                             action="send.php"
                             method="POST"
-                            class="footer__form"
+                            class="footer__form form"
                         >
-                            <input
-                                type="text"
-                                class="input footer__input"
-                                placeholder="Your Full Name*"
-                                name="name"
-                            /><input
-                                type="text"
-                                class="input footer__input"
-                                placeholder="Phone Number*"
-                                name="phone"
-                            />
+                            <div class="footer__input-group">
+                                <input
+                                    type="text"
+                                    class="input footer__input"
+                                    placeholder="Your Full Name*"
+                                    name="name"
+                                    minlength="2"
+                                    required
+                                />
+                            </div>
+                            <div class="footer__input-group">
+                                <input
+                                    type="tel"
+                                    class="input footer__input"
+                                    placeholder="Phone Number*"
+                                    name="phone"
+                                    minlength="16"
+                                    maxlength="16"
+                                    required
+                                />
+                            </div>
                             <textarea
-                                class="footer__message"
+                                class="message footer__message"
                                 cols="30"
                                 rows="10"
                                 placeholder="Message"
@@ -433,7 +459,11 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/jquery-3.6.0.min.js"></script>
         <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/aos.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

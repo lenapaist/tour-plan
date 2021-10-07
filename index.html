@@ -6,21 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Best Tour Plan - Hotel Booking</title>
         <link
-            rel="preload"
             href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <link
-            rel="preload"
             href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/aos.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <header class="navbar navbar__mobile--fixed">
+        <header class="navbar navbar-fixed">
             <div class="container">
                 <div class="navbar-top">
                     <a
@@ -233,9 +237,9 @@
                                     alt="slide"
                                 />
                             </div>
-                            <div class="hotel-slider hotel-slider__item">
+                            <div class="swiper-slide hotel-slider__item">
                                 <img
-                                    class="swiper-slide__image"
+                                    class="hotel-slider__image"
                                     src="./img/slide-2.jpg"
                                     alt="slide"
                                 />
@@ -564,7 +568,9 @@
                             The curious corner <br />
                             of chamarel
                         </h3>
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button">
+                            Book Now
+                        </button>
                     </div>
                     <div
                         class="card activities__card"
@@ -581,7 +587,9 @@
                             Gymkhana club golf <br />
                             course
                         </h3>
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button">
+                            Book Now
+                        </button>
                     </div>
                     <div
                         class="card activities__card card-priority"
@@ -598,7 +606,9 @@
                             Tamarind falls hiking <br />
                             trip - full day
                         </h3>
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button">
+                            Book Now
+                        </button>
                     </div>
                     <div
                         class="card activities__card"
@@ -615,7 +625,9 @@
                             The blue marine discovery <br />
                             quest
                         </h3>
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button">
+                            Book Now
+                        </button>
                     </div>
                 </div>
             </div>
@@ -777,33 +789,33 @@
                                 </div>
 
                                 <div class="footer__item-info">
-                                    <a
-                                        class="footer__item-contacts"
-                                        href="tel:2691500"
-                                        >Tel (business hours) : 269 1500
-                                    </a>
-
-                                    <a
-                                        class="footer__item-contacts"
-                                        href="tel:52-56-61-38"
+                                    <span
+                                        >Tel (business hours) :
+                                        <a
+                                            class="footer__item-contacts"
+                                            href="tel:2691500"
+                                        >
+                                            269 1500
+                                        </a>
+                                    </span>
+                                    <span
                                         >Tel (hotline) Monday - Saturday:
-                                        <span
-                                            class="footer__item-contacts-number"
-                                            >52-56-61-38</span
-                                        >
+                                        <a
+                                            class="footer__item-contacts"
+                                            href="tel:52-56-61-38"
+                                            >52-56-61-38
+                                        </a>
                                         (08:00 am – 20:00 pm)
-                                    </a>
-
-                                    <a
-                                        class="footer__item-contacts"
-                                        href="tel:52-56-61-38"
+                                    </span>
+                                    <span
                                         >Tel (hotline) Sunday:
-                                        <span
-                                            class="footer__item-contacts-number"
-                                            >52-56-61-38</span
-                                        >
-                                        (08:00 am – 14:00 pm)</a
-                                    >
+                                        <a
+                                            class="footer__item-contacts"
+                                            href="tel:52-56-61-38"
+                                            >52-56-61-38
+                                        </a>
+                                        (08:00 am – 14:00 pm)
+                                    </span>
                                 </div>
                             </li>
                             <li class="footer__item footer__item--mb-2">
@@ -837,6 +849,7 @@
                                     class="input footer__input"
                                     placeholder="Your Full Name*"
                                     name="name"
+                                    minlength="2"
                                     required
                                 />
                             </div>
@@ -919,7 +932,6 @@
                         required
                     />
                     <textarea
-                        type="text"
                         name="message"
                         class="message modal__message"
                         placeholder="Message"
